@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px 40px 12px 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+#toggle {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  color: #999;
+}
+
+.criteria-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.criteria-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    width: 95%;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .criteria-list li {
+    font-size: 13px;
+  }
+}
